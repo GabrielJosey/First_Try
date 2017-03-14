@@ -459,14 +459,3 @@ template {
 [hidden] {
   display: none;
 }
-
-/*******************************************
-LISTS - remove default list styles, margin and padding
-********************************************/
-
-ol,
-ul {
-  margin: 0;
-  padding: 0; 
-  list-style: none;
-}
