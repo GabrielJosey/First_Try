@@ -1,41 +1,99 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <meta charset="utf-8">
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
         <title>Once Photography by Hannah</title>
         <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/home.css">
-        <link rel="stylesheet" href="css/responsive.css">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
     </head>
 
 
     <body>
-        <div>
-            <header class="main-header">
-                <div class="container">
+        <div class="container">
+            <header>
+                <div>
                     <a href="index.html">
-                        <h1 class="name">Once Photography by Hannah</h1>
+                        <img src="img/once.png" class="name">
                     </a>
-                    <nav>
-                        <ul class="main-nav">
+<!-- Navigation -->
+
+                    <nav class="navbar-default">
+                    <div class="container-fluid">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav"> 
+                            <li><a href="index.html">Home</a></li>
                             <li><a href="about.html">About</a></li>
-                            <li><a href="investment.html">Investment</a></li>
+                            <li><a href="invest.html">Invest</a></li>
                             <li><a href="gallery.html">Gallery</a></li>
                             <li><a href="contact.html">Contact</a></li>
                             <li><a href="client.html">Client Page</a></li>
-                        </ul>                
+                        </ul>
+                        </div><!-- /.navbar-collapse -->
+                    </div><!-- /.container-fluid -->
                     </nav>
+<!-- /Navigation -->
                 </div>
             </header>
         </div>
-            
 
+<!-- Carousel -->
+        <div id="myCarousel" class="carousel slide junbotron">
+            <div class="container">
+                <ol class"carousel-indicators">
+                    <li class="active" data-target="#myCarousel" data-slide-to="0"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <a href="img/siblings.jpg">
+                            <img src="img/siblings.jpg" alt="">
+                         </a>
+                    </div>
 
+                    <div class="item">
+                        <a href="img/couple.jpg">
+                            <img src="img/couple.jpg" alt="">
+                         </a>
+                    </div>
 
-        <footer class="main-footer">
-            <p>&copy; 2017 Hannah Hsieh.</p>
-        </footer>
+                    <div class="item">
+                        <a href="img/baby.jpg">
+                            <img src="img/baby.jpg" alt="">
+                         </a>
+                    </div>
+
+                </div>
+            </div>
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="icon-prev"></span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="icon-next"></span>
+            </a>
+        </div>
+
+<!-- Footer -->
+        <div class="footer">
+            <footer>
+                <p>&copy; 2017 Hannah Hsieh.</p>
+            </footer>
+        </div>
+<!-- End Footer -->
+
 <script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="js/script.js"></script>
+        <script src="js/bootstrap.min.js"></script>
     </body>
 </html>
